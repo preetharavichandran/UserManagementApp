@@ -1,0 +1,29 @@
+    <div>
+        <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <mat-icon>people_icon</mat-icon>
+        </button>
+        <span>USER MANAGEMENT APP</span>
+        <span class="example-spacer"></span>
+        
+        </mat-toolbar>
+    </div> 
+    <div fxLayoutAlign="center center" fxFlexFill>
+        <mat-card fxFlex="25">
+        <mat-toolbar color="primary" class="loginToolbar"> Login</mat-toolbar>
+            <mat-form-field appearance="outline" color="primary" hintLabel="Max 50 characters">
+            <mat-label>User Name</mat-label>
+            <input matInput [(ngModel)]="loginRequest.UserName" class="loginInput" type="text" placeholder="UserName"  
+            required maxlength="50">
+            <mat-error> Please enter a valid value </mat-error>
+            </mat-form-field>
+        
+            <mat-form-field appearance="outline" color="primary" hintLabel="Max 50 characters">
+            <mat-label>Password</mat-label>
+            <input matInput [(ngModel)]="loginRequest.Password" class="loginInput" type="password" placeholder="Password" 
+            required maxlength="50" >
+            <mat-error> Please enter a valid value </mat-error>
+            </mat-form-field>
+            <button mat-raised-button class="dialogButtons" color="primary" (click)="login(loginRequest)">LOGIN</button>
+        </mat-card>
+    </div>

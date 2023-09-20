@@ -1,0 +1,75 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "login": [
+    {
+      "userName": "Admin",
+      "password": "handleUser"
+    }
+  ],
+  "user": [
+    {
+      "firstName": "Preetha",
+      "lastName": "Ravichandran",
+      "dob": "1993-10-16T22:00:00.000Z",
+      "id": 1
+    },
+    {
+      "firstName": "Jagan",
+      "lastName": "Shanmugam",
+      "dob": "1992-11-28T22:00:00.000Z",
+      "id": 2
+    },
+    {
+      "firstName": "Chris",
+      "lastName": "Harrington",
+      "dob": "2023-09-02T22:00:00.000Z",
+      "id": 4
+    },
+    {
+      "firstName": "Lucas",
+      "lastName": "Sawyer",
+      "dob": "1986-06-10T22:00:00.000Z",
+      "id": 5
+    },
+    {
+      "firstName": "Ana",
+      "lastName": "Darson",
+      "dob": "2013-06-20T22:00:00.000Z",
+      "id": 6
+    },
+    {
+      "firstName": "Henry",
+      "lastName": "Drake",
+      "dob": "1996-08-03T22:00:00.000Z",
+      "id": 7
+    },
+    {
+      "firstName": "jagan",
+      "lastName": "aasda",
+      "dob": "2023-09-19T22:00:00.000Z",
+      "id": 8
+    },
+    {
+      "firstName": "Garry",
+      "lastName": "Hickman",
+      "dob": "1968-11-03T23:00:00.000Z",
+      "id": 9
+    }
+  ]
+}

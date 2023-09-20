@@ -1,0 +1,8 @@
+mat-form-field{
+    width: 100%;
+}
+.datePicker{
+    align-content: center;  
+    width: 100%;  
+    min-height:30px;
+}

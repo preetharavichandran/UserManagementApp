@@ -2,10 +2,22 @@
 
 A simple User Management App with Angular UI and Asp.NET Core WEB API.
 
+## Directory Structure
+
+```
+|--- UserManagementApp  (AngularClient)
+    |--- ...
+|--- UserManagementAPI  (API)
+    |--- ...
+```
+
+
 ## FRONTEND 
 
   This project was generated in **Angular CLI 16.2.2**.
   
+  Run all commands from the `UserManagementApp` folder.
+
   ### Code scaffolding
   - Run `ng generate component <component-name>` to generate a new component.
   - You can also use `ng generate <directive|pipe|service|class|guard|interface|enum|module>`.

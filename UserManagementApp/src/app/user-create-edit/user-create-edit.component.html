@@ -1,0 +1,38 @@
+<div mat-dialog-title >
+    <h1 class="dialogHeader">User Information</h1> 
+</div>
+<form [formGroup] = "userInfoForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="dialogContent">
+        <div class="dialogFields">
+            <mat-form-field appearance="outline" color="primary" hintLabel="Max 50 characters">
+                <mat-label>First Name</mat-label>
+                <input matInput  type="text" placeholder="FirstName" formControlName="firstName" 
+                required maxlength="50" [pattern]="'^[a-zA-Z \-\']+'" class="dialogInput">
+                <mat-error> Please enter a valid value </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" color="primary" hintLabel="Max 50 characters">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" placeholder="Last Name" formControlName="lastName" 
+                required maxlength="50" [pattern]="'^[a-zA-Z \-\']+'" class="dialogInput" >
+                <mat-error> Please enter a valid value </mat-error>
+            </mat-form-field>
+
+            <!-- <app-date-picker></app-date-picker> -->
+            <mat-form-field appearance="outline" color="primary" hintLabel="Mandatory Field">
+                <mat-label>Date of Birth</mat-label>
+                <input matInput [matDatepicker]="dobPicker" placeholder="DD/MM/YYYY" formControlName="dateOfBirth" 
+                (click)="dobPicker.open()" required>
+                <mat-datepicker-toggle matIconSuffix [for]="dobPicker">
+                </mat-datepicker-toggle>
+                <mat-datepicker #dobPicker></mat-datepicker>
+                <mat-error> Mandatory </mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="dialogActions">
+        <button mat-raised-button class="dialogButtons" color="warn" [mat-dialog-close]="false">CANCEL</button>
+        <button mat-raised-button class="dialogButtons" color="primary" type="submit">{{data ? 'UPDATE': 'ADD USER'}}</button>
+    </div>
+</form>

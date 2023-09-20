@@ -1,0 +1,56 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.playArea{
+    width: 80%;
+    /* min-height: 75%; */
+    padding-top: 0.5%;
+    margin: 5% auto; 
+    outline-style:auto;
+    outline-color: #673ab7;
+    background-color:#f0f0f0;
+}
+
+.addUserButton{
+    margin-right: 2%;
+    margin-top: 2%;
+    display: flex;
+    align-content: right;
+    justify-content: right;
+}
+
+  
+mat-table{
+    width:100%;
+    margin-top: 3%;
+    outline-style: auto;
+    outline-color: #673ab7;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+th{
+  font-weight: bolder;
+}
+
+tr {
+    display: flexbox;
+    background-color: #f0f0f0;
+    color:#673ab7;
+    flex : 1;
+    outline-style: auto;
+    outline-color: #673ab7;
+
+  }
+
+  td{
+    min-width: 250px;
+  }
+
+  .paginator{
+    background-color: #673ab7;
+    color: #f0f0f0;
+    vertical-align: end;
+    font-style: italic;
+  }

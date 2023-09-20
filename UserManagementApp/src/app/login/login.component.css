@@ -1,0 +1,31 @@
+
+.loginToolbar{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    justify-content: center;
+  }
+
+  mat-card{
+    border-radius: 1rem;
+    background-color: #f0f0f0;
+  }
+  
+  mat-form-field{
+    border-color: #673ab7;
+    width:80%;
+    margin-top:5%;
+    margin-left:10%;
+  }
+  .loginInput {
+      align-content: center; 
+      justify-content: center;
+      border-color: #673ab7;
+  }
+
+  .dialogButtons{
+    width:80%;
+    margin-left:10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding: 7%;
+  }
